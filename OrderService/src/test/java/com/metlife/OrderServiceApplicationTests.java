@@ -1,4 +1,4 @@
-package com.example.orderservice;
+package com.metlife;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
