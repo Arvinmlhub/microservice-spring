@@ -32,3 +32,36 @@ spring.datasource.username=root
 spring.datasource.password=root
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+
+
+
+
+
+
+
+
+
+
+
+
+product table 
+
+CREATE TABLE `online_shopping`.`product` (
+  `product_id` INT NOT NULL AUTO_INCREMENT,
+  `description` VARCHAR(45) NULL,
+  `price` DECIMAL(10,2) NULL,
+  PRIMARY KEY (`product_id`));
+
+
+
+Order table
+
+CREATE TABLE `online_shopping`.`order` (
+  `order_id` INT NOT NULL AUTO_INCREMENT,
+  `order_date` DATETIME NULL,
+  `total_price` VARCHAR(45) NULL,
+  PRIMARY KEY (`order_id`));
+
+
+
