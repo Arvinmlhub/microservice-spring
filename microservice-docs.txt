@@ -1,0 +1,60 @@
+spring cloud config server
+
+Step 1
+We have to add spring-cloud-config-server dependency .
+
+  <dependency>
+         <groupId>org.springframework.cloud</groupId>
+         <artifactId>spring-cloud-config-server</artifactId>
+      </dependency>
+
+
+Step 2
+we have to add spring-cloud-dependency in dependency management.
+
+
+  <dependencyManagement>
+      <dependencies>
+         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+<!--            <version>${spring-cloud.version}</version>-->
+            <version>Greenwich.SR5</version>
+            <type>pom</type>
+            <scope>import</scope>
+         </dependency>
+      </dependencies>
+   </dependencyManagement>
+
+
+
+
+
+
+Step 3:
+Three file should exist in this location :C:\Traning\online-shopping\microservice-spring\config
+
+limit-service.properties
+limit-service.dev.properties
+limit-service.qa.properties
+
+step 4
+In the application.properties 
+
+spring.application.name:limit-service
+spring.cloud.config.server.git.url: C:\Traning\online-shopping\microservice-spring\config
+
+STep-4
+We have to enable @EnableConfigServer in main methods.
+
+
+
+
+
+
+
+
+
+
+
+
